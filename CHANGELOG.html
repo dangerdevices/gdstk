@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Changelog &mdash; gdstk 0.9.37 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/tabs.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="vec.h" href="headers/vec.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            gdstk
+          </a>
+              <div class="version">
+                0.9.37
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gettingstarted.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how-tos.html">How-Tos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_python.html">Python API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference_cpp.html">C++ Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.9.37 - 2023002-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#changed">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.9.36 - 2023-02-10</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Changed</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id4">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id5">0.9.35 - 2022-12-16</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fixed">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">0.9.1 - 2022-10-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">0.9.0 - 2022-08-20</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#added">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">0.8.3 - 2022-06-02</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id12">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">0.8.2 - 2022-02-26</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">0.8.1 - 2022-01-04</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id17">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id18">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id19">0.8.0 - 2021-10-08</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id20">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id21">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id22">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id23">0.7.0 - 2021-08-02</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id25">Fixed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id27">0.6.1 - 2021-07-03</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id28">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id29">0.6.0 - 2021-06-29</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id32">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id33">0.5.0 - 2021-06-11</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id34">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id35">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id36">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id37">0.4.0 - 2021-04-11</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id38">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id39">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id40">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id41">0.3.2 - 2021-02-15</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id42">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id43">0.3.1 - 2021-02-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id44">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id45">0.3.0 - 2021-02-12</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id46">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id47">Changed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id48">0.2.0 - 2020-11-23</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id49">Added</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id50">Changed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id51">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id52">0.1.1 - 2020-11-13</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id53">Fixed</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id54">0.1.0 - 2020-10-03</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id55">Added</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">gdstk</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Changelog</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this heading"></a></h1>
+<section id="id1">
+<h2>0.9.37 - 2023002-12<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<section id="changed">
+<h3>Changed<a class="headerlink" href="#changed" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Build system changes for lower numpy version requirements</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>0.9.36 - 2023-02-10<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<section id="id3">
+<h3>Changed<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Downgrade the zlib version dependency to support manylinux2014</p></li>
+<li><p>Minor documentation improvements</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="id4">
+<h1>Changelog<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h1>
+<section id="id5">
+<h2>0.9.35 - 2022-12-16<a class="headerlink" href="#id5" title="Permalink to this heading"></a></h2>
+<section id="fixed">
+<h3>Fixed<a class="headerlink" href="#fixed" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Segfaults caused by class inheritance in Python</p></li>
+<li><p>Segfaults caused by cleanup of incomplete initialization of Python instances</p></li>
+</ul>
+</section>
+</section>
+<section id="id6">
+<h2>0.9.1 - 2022-10-12<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h2>
+<section id="id7">
+<h3>Fixed<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Reading polygons with extremelly large number of vertices</p></li>
+<li><p>Integer overflow in boolean operations</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GdsWriter</span></code> C++ API fix</p></li>
+<li><p>Properly read zlib path from environment during build</p></li>
+<li><p>Ensure polygons are closed when laoding GDSII files</p></li>
+<li><p>Reference counting in <code class="docutils literal notranslate"><span class="pre">Reference.apply_repetition</span></code> and <code class="docutils literal notranslate"><span class="pre">Cell.flatten</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="id8">
+<h2>0.9.0 - 2022-08-20<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h2>
+<section id="id9">
+<h3>Fixed<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Bug when saving OASIS files with missing references.</p></li>
+</ul>
+</section>
+<section id="added">
+<h3>Added<a class="headerlink" href="#added" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Reference.get_polygons</span></code>, <code class="docutils literal notranslate"><span class="pre">Reference.get_paths</span></code>, <code class="docutils literal notranslate"><span class="pre">Reference.get_labels</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Library.rename_cell</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Library::rename_cell</span></code> and <code class="docutils literal notranslate"><span class="pre">Library::replace_cell</span></code> in the C++ API</p></li>
+</ul>
+</section>
+<section id="id10">
+<h3>Changed<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cell.filter</span></code> arguments modified to match <code class="docutils literal notranslate"><span class="pre">read_gds</span></code>.</p></li>
+<li><p>Changed default tolerance for <code class="docutils literal notranslate"><span class="pre">read_gds</span></code> and <code class="docutils literal notranslate"><span class="pre">read_oas</span></code> to be the library’s rounding size.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Reference::polygons</span></code> renamed to <code class="docutils literal notranslate"><span class="pre">Reference::get_polygons</span></code> in the C++ API.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Reference::flexpaths</span></code> renamed to <code class="docutils literal notranslate"><span class="pre">Reference::get_flexpaths</span></code> in the C++ API.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Reference::robustpaths</span></code> renamed to <code class="docutils literal notranslate"><span class="pre">Reference::get_robustpaths</span></code> in the C++ API.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Reference::labels</span></code> renamed to <code class="docutils literal notranslate"><span class="pre">Reference::get_labels</span></code> in the C++ API.</p></li>
+<li><p>Removed magnification argument from <code class="docutils literal notranslate"><span class="pre">Reference::init</span></code> and <code class="docutils literal notranslate"><span class="pre">Label::init</span></code> in the C++ API.</p></li>
+</ul>
+</section>
+</section>
+<section id="id11">
+<h2>0.8.3 - 2022-06-02<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h2>
+<section id="id12">
+<h3>Fixed<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>References from raw cells are kept from garbage collection while in use</p></li>
+<li><p>Allow assigning to <code class="docutils literal notranslate"><span class="pre">Reference.x_reflection</span></code> from Python</p></li>
+<li><p>Errors in detection of arrays when exporting GDSII files</p></li>
+</ul>
+</section>
+</section>
+<section id="id13">
+<h2>0.8.2 - 2022-02-26<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h2>
+<section id="id14">
+<h3>Fixed<a class="headerlink" href="#id14" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cell.get_paths</span></code> not returning all FlexPaths when RobustPaths were present in the cell (thanks &#64;jatoben)</p></li>
+<li><p>Reference array is no longer transformed into multiple references when element displacement is zero</p></li>
+<li><p>Memory leaks in the python wrapper (thanks &#64;jatoben)</p></li>
+</ul>
+</section>
+<section id="id15">
+<h3>Changed<a class="headerlink" href="#id15" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Set separation instead of offset in <code class="docutils literal notranslate"><span class="pre">FlexPath::init</span></code> and <code class="docutils literal notranslate"><span class="pre">RobustPath::init</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="id16">
+<h2>0.8.1 - 2022-01-04<a class="headerlink" href="#id16" title="Permalink to this heading"></a></h2>
+<section id="id17">
+<h3>Fixed<a class="headerlink" href="#id17" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Missing flag in OASIS bounding box property</p></li>
+<li><p>Bug in bounding box when using explicit repetitions</p></li>
+<li><p>Segfault when loading GDSII files with missing cells</p></li>
+</ul>
+</section>
+<section id="id18">
+<h3>Changed<a class="headerlink" href="#id18" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>GdsWriter C++ API</p></li>
+<li><p>Safer initializers C++ API</p></li>
+</ul>
+</section>
+</section>
+<section id="id19">
+<h2>0.8.0 - 2021-10-08<a class="headerlink" href="#id19" title="Permalink to this heading"></a></h2>
+<section id="id20">
+<h3>Added<a class="headerlink" href="#id20" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cell.get_polygons</span></code>, <code class="docutils literal notranslate"><span class="pre">Cell.get_paths</span></code>, and <code class="docutils literal notranslate"><span class="pre">Cell.get_labels</span></code> return a copy of a cell’s polygons, paths or labels, including references, with the possibility of filtering by layer and type</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Library.layers_and_datatypes</span></code> and <code class="docutils literal notranslate"><span class="pre">Library.layers_and_texttypes</span></code> return tuples with the layer and data/text types found in the library.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gdstk.gds_info</span></code> provide information about a GDSII file without fully loading it</p></li>
+<li><p>Several <code class="docutils literal notranslate"><span class="pre">FlexPath</span></code> and <code class="docutils literal notranslate"><span class="pre">RobustPath</span></code> attributes.</p></li>
+</ul>
+</section>
+<section id="id21">
+<h3>Fixed<a class="headerlink" href="#id21" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Label transforms in SVG output</p></li>
+<li><p>Label styling in SVG output</p></li>
+<li><p>Default label magnification when loading a GDSII file</p></li>
+<li><p>Bugs when loading some OASIS files</p></li>
+<li><p>Bug in OASIS output for some Manhattan geometry.</p></li>
+<li><p>Bug fix in Map::del</p></li>
+<li><p>Bounding box calculations take all repetitions into account</p></li>
+<li><p>Memory leaks</p></li>
+</ul>
+</section>
+<section id="id22">
+<h3>Changed<a class="headerlink" href="#id22" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Removed LAPACK dependency</p></li>
+<li><p>The implementation of layer and data/text type for shapes and labels use the type <code class="docutils literal notranslate"><span class="pre">Tag</span></code> in the C++ API</p></li>
+<li><p>Style arguments renamed in <code class="docutils literal notranslate"><span class="pre">Cell.write_svg</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="id23">
+<h2>0.7.0 - 2021-08-02<a class="headerlink" href="#id23" title="Permalink to this heading"></a></h2>
+<section id="id24">
+<h3>Added<a class="headerlink" href="#id24" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">contour</span></code> function</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Polygon.transform</span></code> to apply a general transformation to the polygon vertices</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Polygon.contain</span></code> tests whether single points are inside the polygon</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Polygon.contain_all</span></code> and <code class="docutils literal notranslate"><span class="pre">Polygon.contain_any</span></code> test multiple points with short circuit</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">all_inside</span></code> and <code class="docutils literal notranslate"><span class="pre">any_inside</span></code> test multiple points against multiple polygons with short circuit</p></li>
+<li><p>Alternative function interfaces in the C++ API</p></li>
+</ul>
+</section>
+<section id="id25">
+<h3>Fixed<a class="headerlink" href="#id25" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Holes in boolean results could lead to incorrect geometry in specific cases</p></li>
+<li><p>Bug in boolean operations resulting in self-intersecting polygons</p></li>
+<li><p>Bug in boolean operations with clockwise-oriented polygons</p></li>
+<li><p>Unsupported records found when loading a library generate a warning, not an error</p></li>
+</ul>
+</section>
+<section id="id26">
+<h3>Changed<a class="headerlink" href="#id26" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">inside</span></code> has changed to use the better interfaces: grouping has been removed, scaling is not necessary, and short-circuit is implemented in <code class="docutils literal notranslate"><span class="pre">all_inside</span></code> and <code class="docutils literal notranslate"><span class="pre">any_inside</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="id27">
+<h2>0.6.1 - 2021-07-03<a class="headerlink" href="#id27" title="Permalink to this heading"></a></h2>
+<section id="id28">
+<h3>Fixed<a class="headerlink" href="#id28" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Bug in <code class="docutils literal notranslate"><span class="pre">gdstk::read_oas</span></code> and <code class="docutils literal notranslate"><span class="pre">Library.read_oas</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="id29">
+<h2>0.6.0 - 2021-06-29<a class="headerlink" href="#id29" title="Permalink to this heading"></a></h2>
+<section id="id30">
+<h3>Added<a class="headerlink" href="#id30" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Library.replace</span></code>, used when adding cells with substitution of duplicate cell names</p></li>
+<li><p>Added pyproject.toml (thanks Ben Gollmer for the fix)</p></li>
+</ul>
+</section>
+<section id="id31">
+<h3>Changed<a class="headerlink" href="#id31" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Reference.cell</span></code> is now writable</p></li>
+</ul>
+</section>
+<section id="id32">
+<h3>Fixed<a class="headerlink" href="#id32" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Bug in Array::insert not increasing the array count</p></li>
+</ul>
+</section>
+</section>
+<section id="id33">
+<h2>0.5.0 - 2021-06-11<a class="headerlink" href="#id33" title="Permalink to this heading"></a></h2>
+<section id="id34">
+<h3>Added<a class="headerlink" href="#id34" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Argument <code class="docutils literal notranslate"><span class="pre">precision</span></code> in <code class="docutils literal notranslate"><span class="pre">Cell.write_svg</span></code> controls the maximum number of digits of coordinates in the SVG</p></li>
+<li><p>Function <code class="docutils literal notranslate"><span class="pre">gds_timestamp</span></code> can be used to query or set the timestamp in a GDSII file</p></li>
+<li><p>Better error handling in the C++ API and argument validation for the Python wrapper</p></li>
+</ul>
+</section>
+<section id="id35">
+<h3>Changed<a class="headerlink" href="#id35" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">oas_validate</span></code> returns <code class="docutils literal notranslate"><span class="pre">None</span></code> if the file has no checksum information</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Library.write_gds</span></code> and <code class="docutils literal notranslate"><span class="pre">GdsWriter</span></code> accept a timestamp setting</p></li>
+</ul>
+</section>
+<section id="id36">
+<h3>Fixed<a class="headerlink" href="#id36" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Bend calculation for <code class="docutils literal notranslate"><span class="pre">FlexPath</span></code> correctly accounts for bending angle to make sure the bend fits</p></li>
+<li><p>Missing files in the source distribution</p></li>
+</ul>
+</section>
+</section>
+<section id="id37">
+<h2>0.4.0 - 2021-04-11<a class="headerlink" href="#id37" title="Permalink to this heading"></a></h2>
+<section id="id38">
+<h3>Added<a class="headerlink" href="#id38" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Cell.filter</span></code> to remove elements by layer and data/text type</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cell.convex_hull</span></code> and <code class="docutils literal notranslate"><span class="pre">Reference.convex_hull</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">FlexPath.path_spines()</span></code> and <code class="docutils literal notranslate"><span class="pre">RobustPath.path_spines()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Library.unit</span></code> and <code class="docutils literal notranslate"><span class="pre">Library.precision</span></code></p></li>
+<li><p>Shapes can be sorted in <code class="docutils literal notranslate"><span class="pre">Cell.write_svg</span></code> (sorting works within each cell, references remain on top)</p></li>
+</ul>
+</section>
+<section id="id39">
+<h3>Changed<a class="headerlink" href="#id39" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Bounding box calculations use convex hull for efficiency</p></li>
+<li><p>Bounding box and convex hull calculations cache intermediate results for efficiency</p></li>
+</ul>
+</section>
+<section id="id40">
+<h3>Fixed<a class="headerlink" href="#id40" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Robustpath.parametric</span></code> docstring.</p></li>
+<li><p>Accept <code class="docutils literal notranslate"><span class="pre">None</span></code> as a possible value for arguments in several <code class="docutils literal notranslate"><span class="pre">RobustPath</span></code> methods</p></li>
+</ul>
+</section>
+</section>
+<section id="id41">
+<h2>0.3.2 - 2021-02-15<a class="headerlink" href="#id41" title="Permalink to this heading"></a></h2>
+<section id="id42">
+<h3>Fixed<a class="headerlink" href="#id42" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Build system fixes for conda recipe</p></li>
+</ul>
+</section>
+</section>
+<section id="id43">
+<h2>0.3.1 - 2021-02-12<a class="headerlink" href="#id43" title="Permalink to this heading"></a></h2>
+<section id="id44">
+<h3>Fixed<a class="headerlink" href="#id44" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Missing constant definition</p></li>
+</ul>
+</section>
+</section>
+<section id="id45">
+<h2>0.3.0 - 2021-02-12<a class="headerlink" href="#id45" title="Permalink to this heading"></a></h2>
+<section id="id46">
+<h3>Added<a class="headerlink" href="#id46" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Support for OASIS files</p></li>
+<li><p>Repetition property for geometric objects, labels and references</p></li>
+<li><p>Library and cells can have properties</p></li>
+</ul>
+</section>
+<section id="id47">
+<h3>Changed<a class="headerlink" href="#id47" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Use cmake to properly install library</p></li>
+<li><p>More efficient bounding box calculation for rotations multiple of 90°</p></li>
+<li><p>Labels are now included in bounding box calculations</p></li>
+<li><p>Properties can be general or GDSII-specific. Only the latter are stored in gds files.</p></li>
+<li><p>Attribute <code class="docutils literal notranslate"><span class="pre">gdsii_path</span></code> renamed to <code class="docutils literal notranslate"><span class="pre">simple_path</span></code> in <code class="docutils literal notranslate"><span class="pre">FlexPath</span></code> and <code class="docutils literal notranslate"><span class="pre">RobustPath</span></code>.</p></li>
+</ul>
+</section>
+</section>
+<section id="id48">
+<h2>0.2.0 - 2020-11-23<a class="headerlink" href="#id48" title="Permalink to this heading"></a></h2>
+<section id="id49">
+<h3>Added<a class="headerlink" href="#id49" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>How-tos and C++ examples</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Cell.add</span></code> and <code class="docutils literal notranslate"><span class="pre">Library.add</span></code> accept iterators</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Map&lt;T&gt;.has_key</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Repetition</span></code> class</p></li>
+</ul>
+</section>
+<section id="id50">
+<h3>Changed<a class="headerlink" href="#id50" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">RawCell</span></code> doesn’t copy the contents of its input file unless needed</p></li>
+<li><p>Dependencies for <code class="docutils literal notranslate"><span class="pre">Cell</span></code> and <code class="docutils literal notranslate"><span class="pre">RawCell</span></code> are stored in maps, instead of arrays in the C++ API</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">translate</span></code> method of polygons and paths accept a sequence of 2 coordinates or a complex</p></li>
+</ul>
+</section>
+<section id="id51">
+<h3>Fixed<a class="headerlink" href="#id51" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Incorrect scaling for <code class="docutils literal notranslate"><span class="pre">FlexPath</span></code> when <code class="docutils literal notranslate"><span class="pre">scale_width</span> <span class="pre">=</span> <span class="pre">False</span></code></p></li>
+<li><p>Typo in default SVG background specification</p></li>
+<li><p>Negative path extensions are correctly implemented</p></li>
+</ul>
+</section>
+</section>
+<section id="id52">
+<h2>0.1.1 - 2020-11-13<a class="headerlink" href="#id52" title="Permalink to this heading"></a></h2>
+<section id="id53">
+<h3>Fixed<a class="headerlink" href="#id53" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Add missing source files to MANIFEST.in</p></li>
+<li><p>Remove directory from CMakeLists.txt</p></li>
+<li><p>Remove unnecessary dependency from conda</p></li>
+</ul>
+</section>
+</section>
+<section id="id54">
+<h2>0.1.0 - 2020-10-03<a class="headerlink" href="#id54" title="Permalink to this heading"></a></h2>
+<section id="id55">
+<h3>Added<a class="headerlink" href="#id55" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Initial release</p></li>
+</ul>
+<p>Format based on <a class="reference external" href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="headers/vec.html" class="btn btn-neutral float-left" title="vec.h" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Lucas H. Gabrielli.</p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
